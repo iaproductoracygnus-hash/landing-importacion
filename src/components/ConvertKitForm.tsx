@@ -2,6 +2,28 @@
 
 import Script from "next/script";
 
+const CK_OPTIONS = JSON.stringify({
+  settings: {
+    after_subscribe: {
+      action: "redirect",
+      success_message: "Success! Now check your email to confirm your subscription.",
+      redirect_url: "https://landing-importacion-gracias.vercel.app/",
+    },
+    analytics: {
+      google: null,
+      fathom: null,
+      facebook: null,
+      segment: null,
+      pinterest: null,
+      sparkloop: null,
+      googletagmanager: null,
+    },
+    recaptcha: { enabled: false },
+    return_visitor: { action: "show", custom_content: "" },
+  },
+  version: "5",
+});
+
 export function ConvertKitForm() {
   return (
     <>
@@ -17,6 +39,7 @@ export function ConvertKitForm() {
         data-uid="6ed2ec8d2a"
         data-format="inline"
         data-version="5"
+        data-options={CK_OPTIONS}
         style={{ maxWidth: "100%" }}
       >
         <div data-style="clean">
