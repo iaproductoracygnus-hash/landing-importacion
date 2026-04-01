@@ -27,6 +27,7 @@ export function HeroSection() {
             alt="Plan Tu Primera Importación Rentable"
             width={188}
             height={70}
+            priority
           />
 
           {/* Heading */}

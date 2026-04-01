@@ -99,6 +99,7 @@ export function ClassesSection() {
                   alt={cls.imageAlt}
                   width={400}
                   height={225}
+                  loading="lazy"
                   className="rounded-xl object-cover w-full md:w-[400px]"
                 />
               </div>
