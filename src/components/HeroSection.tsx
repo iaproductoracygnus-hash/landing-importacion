@@ -59,6 +59,7 @@ export function HeroSection() {
           alt=""
           fill
           priority
+          sizes="(max-width: 768px) 0vw, 100vw"
           style={{ objectFit: "cover", objectPosition: "center" }}
         />
 

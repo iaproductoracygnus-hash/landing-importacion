@@ -13,7 +13,8 @@ export function Footer() {
           alt="Plan Tu Primera Importación Rentable"
           width={200}
           height={80}
-          className="w-[160px] md:w-[200px] h-auto object-contain"
+          className="w-[160px] md:w-[200px] object-contain"
+          style={{ height: "auto" }}
         />
 
         {/* Copyright */}
