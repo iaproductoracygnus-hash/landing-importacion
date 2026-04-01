@@ -16,10 +16,41 @@ const roboto = Roboto({
   display: "swap",
 });
 
+const siteUrl = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Plan Tu Primera Importación Rentable",
   description:
     "Descubre el método YUAN para construir un negocio rentable importando directamente desde China.",
+  icons: {
+    icon: "/images/logo-plan.webp",
+    apple: "/images/logo-plan.webp",
+  },
+  openGraph: {
+    title: "Plan Tu Primera Importación Rentable",
+    description:
+      "Descubre el método YUAN para construir un negocio rentable importando directamente desde China.",
+    images: [
+      {
+        url: "/images/hero-bg.webp",
+        width: 1919,
+        height: 723,
+        alt: "Plan Tu Primera Importación Rentable",
+      },
+    ],
+    type: "website",
+    locale: "es_ES",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Plan Tu Primera Importación Rentable",
+    description:
+      "Descubre el método YUAN para construir un negocio rentable importando directamente desde China.",
+    images: ["/images/hero-bg.webp"],
+  },
 };
 
 export default function RootLayout({

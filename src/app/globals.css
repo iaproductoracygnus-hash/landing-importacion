@@ -73,3 +73,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.formkit-powered-by-convertkit-container {
+  display: none !important;
+}

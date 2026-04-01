@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import { useEffect } from "react";
 
 const CK_OPTIONS = JSON.stringify({
   settings: {
@@ -24,7 +25,30 @@ const CK_OPTIONS = JSON.stringify({
   version: "5",
 });
 
+const UTM_FIELDS = [
+  "utm_campaign",
+  "utm_content",
+  "utm_medium",
+  "utm_placement",
+  "utm_source",
+  "utm_country",
+  "utm_city",
+] as const;
+
 export function ConvertKitForm() {
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    UTM_FIELDS.forEach((key) => {
+      const value = params.get(key);
+      if (!value) return;
+      document
+        .querySelectorAll<HTMLInputElement>(`input[name="fields[${key}]"]`)
+        .forEach((input) => {
+          input.value = value;
+        });
+    });
+  }, []);
+
   return (
     <>
       <Script
