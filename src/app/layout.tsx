@@ -35,14 +35,6 @@ export const metadata: Metadata = {
     title: "Plan Tu Primera Importación Rentable",
     description:
       "Descubre el método YUAN para construir un negocio rentable importando directamente desde China.",
-    images: [
-      {
-        url: "/images/hero-bg.webp",
-        width: 1919,
-        height: 723,
-        alt: "Plan Tu Primera Importación Rentable",
-      },
-    ],
     type: "website",
     locale: "es_ES",
   },
@@ -51,7 +43,6 @@ export const metadata: Metadata = {
     title: "Plan Tu Primera Importación Rentable",
     description:
       "Descubre el método YUAN para construir un negocio rentable importando directamente desde China.",
-    images: ["/images/hero-bg.webp"],
   },
 };
 
