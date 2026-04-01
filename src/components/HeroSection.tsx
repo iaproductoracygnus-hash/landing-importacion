@@ -21,6 +21,7 @@ export function HeroSection() {
             width={1919}
             height={723}
             priority
+            sizes="160vw"
             className="w-full h-auto"
           />
         </div>
