@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export function AboutSection() {
@@ -90,19 +88,18 @@ export function AboutSection() {
 
           {/* CTA Button */}
           <div className="flex justify-center">
-            <button
-              className="text-white font-bold cursor-pointer w-full text-[15px]"
-              onClick={() => document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })}
+            <a
+              href="#formulario"
+              className="text-white font-bold w-full text-[15px] text-center block"
               style={{
                 backgroundColor: "rgb(60, 177, 29)",
                 borderRadius: "9999px",
                 padding: "15px 20px",
-                border: "none",
                 animation: "onda 1.5s infinite",
               }}
             >
               QUIERO APRENDER A IMPORTAR
-            </button>
+            </a>
           </div>
         </div>
 
@@ -207,9 +204,9 @@ export function AboutSection() {
             </div>
 
             <div className="flex justify-center">
-              <button
-                className="text-white font-bold cursor-pointer"
-                onClick={() => document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })}
+              <a
+                href="#formulario"
+                className="text-white font-bold text-center block"
                 style={{
                   backgroundColor: "rgb(60, 177, 29)",
                   fontSize: "16px",
@@ -217,12 +214,11 @@ export function AboutSection() {
                   padding: "15px 20px",
                   width: "100%",
                   maxWidth: "500px",
-                  border: "none",
                   animation: "onda 1.5s infinite",
                 }}
               >
                 QUIERO APRENDER A IMPORTAR
-              </button>
+              </a>
             </div>
           </div>
         </div>

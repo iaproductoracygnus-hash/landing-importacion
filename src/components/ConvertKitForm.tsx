@@ -7,7 +7,7 @@ export function ConvertKitForm() {
     <>
       <Script
         src="https://f.convertkit.com/ckjs/ck.5.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <form
         action="https://app.kit.com/forms/9275752/subscriptions"

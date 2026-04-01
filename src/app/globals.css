@@ -130,13 +130,10 @@
 }
 
 @keyframes onda {
-  0% {
-    box-shadow: 0 0 0 0 rgba(60, 177, 29, 0.5);
-  }
-  70% {
-    box-shadow: 0 0 0 20px rgba(60, 177, 29, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(60, 177, 29, 0);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+html {
+  scroll-behavior: smooth;
 }

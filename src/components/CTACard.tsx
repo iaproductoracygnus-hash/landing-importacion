@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export function CTACard() {
@@ -61,21 +59,20 @@ export function CTACard() {
 
       {/* CTA Button — outside card */}
       <div className="flex justify-center mt-6 md:mt-8 w-full px-1" style={{ maxWidth: "900px" }}>
-        <button
-          className="text-white font-bold cursor-pointer text-[15px] md:text-[16px]"
-          onClick={() => document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })}
+        <a
+          href="#formulario"
+          className="text-white font-bold text-center block text-[15px] md:text-[16px]"
           style={{
             backgroundColor: "rgb(60, 177, 29)",
             borderRadius: "9999px",
             padding: "15px 20px",
             width: "100%",
             maxWidth: "500px",
-            border: "none",
             animation: "onda 1.5s infinite",
           }}
         >
           QUIERO APRENDER A IMPORTAR
-        </button>
+        </a>
       </div>
     </section>
   );
