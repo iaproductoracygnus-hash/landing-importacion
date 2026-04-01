@@ -32,11 +32,7 @@ export default function RootLayout({
       lang="es"
       className={`${montserrat.variable} ${roboto.variable} h-full antialiased`}
     >
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="image" href="/images/hero-bg.webp" fetchPriority="high" />
-      </head>
+      <head />
       <body className="min-h-full flex flex-col bg-[#010610] text-white font-[family-name:var(--font-montserrat)]">
         {children}
       </body>

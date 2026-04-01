@@ -26,6 +26,13 @@
   "engines": {
     "node": ">=24"
   },
+  "browserslist": [
+    "Chrome >= 87",
+    "Firefox >= 78",
+    "Safari >= 14",
+    "Edge >= 88",
+    "not IE 11"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
